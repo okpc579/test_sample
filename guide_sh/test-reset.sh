@@ -15,12 +15,12 @@ cf delete -f php-sample
 cf delete -f nginx-sample
 cf delete -f binary-sample
 cf delete -f egov-3.9-sample
-cf delete -f bookstore-service-broker
 
 cf delete-space-quota -f test-space-quota
 cf delete-buildpack -f egov_39 
 cf delete-service -f my-bookstore
 cf delete-service-broker -f bookstore
+cf delete -f bookstore-service-broker
 cf delete-space -f ${Create_Space_Name} -o ${Create_Space_Name}
 cf delete-org -f ${Create_Space_Name}
 cf delete-user -f ${PaaSTA_Create_User_ID}
