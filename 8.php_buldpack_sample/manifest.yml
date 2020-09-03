@@ -1,0 +1,8 @@
+---
+applications:
+- name: php-sample
+  memory: 128M
+  buildpacks:
+  - php_buildpack
+  env:
+    SOME_VAR: Wheee

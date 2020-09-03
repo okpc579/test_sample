@@ -1,0 +1,7 @@
+---
+applications:
+- name: nodejs-sample
+  memory: 512M
+  buildpack: nodejs_buildpack
+  instances: 1
+  random-route: false

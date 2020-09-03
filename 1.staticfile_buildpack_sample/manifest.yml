@@ -1,0 +1,8 @@
+---
+applications:
+- name: 1.staticfile-sample
+  random-route: false
+  buildpack: staticfile_buildpack
+  memory: 8M
+  disk_quota: 256M
+  path: web
