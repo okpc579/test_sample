@@ -2,5 +2,5 @@
 
 source variables.sh
 
-bosh -e ${BOSH_Director_Name} update-runtime-config ${BOSH_Path}/runtime-configs/dns.yml -n
-bosh -e ${BOSH_Director_Name} runtime-config
+bosh -e ${BOSH_Director_Name} update-config --type='runtime' --name='test-runtime-config' ${Sample_Path}/etc/dns.yml -n
+bosh -e ${BOSH_Director_Name} runtime-config --name='test-runtime-config'

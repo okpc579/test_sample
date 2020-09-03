@@ -1,6 +1,6 @@
 ---
 applications:
-- name: 1.staticfile-sample
+- name: staticfile-sample
   random-route: false
   buildpack: staticfile_buildpack
   memory: 8M

@@ -1,0 +1,10 @@
+applications:
+- name: staticfile-sample
+  buildpacks:
+  - staticfile_buildpack
+  disk_quota: 256M
+  instances: 1
+  memory: 8M
+  routes:
+  - route: staticfile-sample.3.34.248.251.nip.io
+  stack: cflinuxfs3
