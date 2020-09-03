@@ -6,7 +6,7 @@ BOSH_Path="<BOSH_Deployment_File_Path>"				# e.g. ~/workspace/paasta-5.0/deploym
 BOSH_IP="<BOSH_IP>"									# e.g. 10.0.1.6
 IaaS="<IaaS_Name>"									# e.g. aws/azure/gcp/openstack/vsphere
 Stemcell="<Stemcell_version>"
-Cloud_config="<Cloud-config_File_Path>"		# e.g. ~/workspace/paasta-5.0/deployment/paasta-deployment/cloud-config
+Cloud_config_Path="<Cloud-config_File_Path>"		# e.g. ~/workspace/paasta-5.0/deployment/paasta-deployment/cloud-config
 
 # PaaS-TA VARIABLES
 PaaSTA_Domain="<PaaS-TA_domain>"					# e.g. 10.244.0.34.nip.io
