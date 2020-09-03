@@ -2,7 +2,7 @@
 
 source variables.sh
 
-cf login -a https://api.${PaaS-TA_Domain} --skip-ssl-validation -u ${PaaS-TA_Create_User_ID} -p ${PaaS-TA_Create_User_Password} -o ${Create_Org_Name} -s ${Create_Space_Name}
+cf login -a https://api.${PaaSTA_Domain} --skip-ssl-validation -u ${PaaSTA_Create_User_ID} -p ${PaaSTA_Create_User_Password} -o ${Create_Org_Name} -s ${Create_Space_Name}
 cf push -f ${Sample_Path}/2.java_buildpack_sample/manifest.yml
 cf push -f ${Sample_Path}/3.ruby_buildpack_sample/manifest.yml
 cf push -f ${Sample_Path}/4.dotnet_core_buildpack_sample/manifest.yml
