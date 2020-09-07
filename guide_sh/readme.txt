@@ -13,3 +13,14 @@
 
 6. 테스트와 관련된 기타 파일들은 etc 폴더에 있습니다.
 
+7. 07.bosh_jump-box.sh 의 경우 
+sudo su
+monit summary
+를 타이핑 하여 확인해주세요. (종료 exit, exit)
+
+8. 19.paas-ta_app-ssh.sh 의 경우 접속 확인 후 종료해주세요. (종료 exit)
+
+9. 20.paas-ta_app-scp.sh 의 경우 시작전 PaaS-TA-java 앱의 화면을 확인 후 출력되는 코드를 Password에 입력해주시고 PaaS-TA-java 앱의 화면을 다시 확인해주세요.
+
+10. 24.paas-ta_security-group.sh의 경우 스크립트 작동 전에 etc/rule.json을 먼저 변경해주세요. (destination : PaaS-TA Database IP / ports : PaaS-TA Database Port(mysql:3306, postgres:5524))
+스크립트가 작동하게되면 App으로 들어가는데 nc -vz {destination} {ports} 를 타이핑 하여 통신연결을 확인해주세요.(종료 exit)
