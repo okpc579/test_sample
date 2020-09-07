@@ -7,9 +7,9 @@ BOSH_IP="<BOSH_IP>"						# e.g. 10.0.1.6
 IaaS="<IaaS_Name>"						# e.g. aws/azure/gcp/openstack/vsphere
 
 # PaaS-TA VARIABLES
-PaaSTA_Domain="<PaaS-TA_domain>"				# e.g. 10.244.0.34.nip.io
-PaaSTA_Admin_ID="<PaaS-TA_Admin_ID>"				# e.g. admin
-PaaSTA_Admin_Password="<PaaS-TA_Admin_Password>"		# e.g. admin
+PaaSTA_Domain="3.34.248.251.nip.io"				# e.g. 10.244.0.34.nip.io
+PaaSTA_Admin_ID="admin"				# e.g. admin
+PaaSTA_Admin_Password="admin"		# e.g. admin
 PaaSTA_Create_User_ID="<PaaS-TA_Create_User_ID>"		# e.g. test-user
 PaaSTA_Create_User_Password="<PaaS-TA_Create_User_Password>"	# e.g. test-pw
 Create_Org_Name="<Create_Org_Name>"				# e.g. test-org

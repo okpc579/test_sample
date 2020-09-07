@@ -2,6 +2,18 @@
 
 source variables.sh
 
+convertsecs() {
+ ((h=${1}/3600))
+ ((m=(${1}%3600)/60))
+ ((s=${1}%60))
+ printf "spend time : %02d:%02d:%02d\n" $h $m $s
+}
+
+echo -e "start time : \c"
+date
+FIRST_DATE=`date "+%s"`
+
+
 if [[ ${IaaS} = 'aws' ]]; then
 	bosh -e ${BOSH_Director_Name} upload-stemcell https://s3.amazonaws.com/bosh-core-stemcells/315.64/bosh-stemcell-315.64-aws-xen-hvm-ubuntu-xenial-go_agent.tgz -n
 elif [[ ${IaaS} = 'azure' ]]; then
@@ -15,3 +27,12 @@ else
 fi
 
 bosh -e ${BOSH_Director_Name} stemcells
+
+
+echo -e "end time : \c"
+date
+SECOND_DATE=`date "+%s"`
+
+INTERVAL=`echo "(${SECOND_DATE} - ${FIRST_DATE} )  " | bc`
+echo $(convertsecs $INTERVAL)
+
