@@ -2,4 +2,4 @@
 
 source variables.sh
 
-cf logs staticfile-sample --recent
+cf logs PaaS-TA-staticfile --recent

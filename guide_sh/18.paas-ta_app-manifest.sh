@@ -2,4 +2,4 @@
 
 source variables.sh
 
-cf create-app-manifest staticfile-sample
+cf create-app-manifest PaaS-TA-staticfile

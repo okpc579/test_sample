@@ -1,6 +1,6 @@
 ---
 applications:
-- name: binary-sample
+- name: PaaS-TA-binary
   memory: 30M
   disk_quota: 16M
   buildpack: binary_buildpack

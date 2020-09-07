@@ -1,8 +1,8 @@
 ---
 applications:
-- name: staticfile-sample
+- name: PaaS-TA-staticfile
   random-route: false
   buildpack: staticfile_buildpack
-  memory: 8M
+  memory: 16M
   disk_quota: 256M
   path: web

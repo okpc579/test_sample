@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: dotnet-core-sample
+  - name: PaaS-TA-dotnet-core
     random-route: false
     buildpack: dotnet_core_buildpack
     env:

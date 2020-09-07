@@ -2,4 +2,4 @@
 
 source variables.sh
 
-cf ssh java-sample
+cf ssh PaaS-TA-java

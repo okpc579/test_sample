@@ -1,6 +1,6 @@
 ---
 applications:
-- name: ruby-sample
+- name: PaaS-TA-ruby
   random-route: false
   buildpack: ruby_buildpack
   memory: 32M
